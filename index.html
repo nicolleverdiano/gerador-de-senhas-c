@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador e Analisador de Senhas - Alura Start</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header class="app-header">
+            <h1>Alura Password Security</h1>
+            <p>Monitore a força dos seus acessos com base em princípios matemáticos.</p>
+        </header>
+
+        <section class="card-generator">
+            <div class="input-container">
+                <input type="text" id="password-output" readonly placeholder="Sua senha aparecerá aqui...">
+                <button id="btn-generate">Gerar Senha</button>
+            </div>
+
+            <div class="security-panel">
+                <div class="meter-bar">
+                    <div id="strength-indicator"></div>
+                </div>
+                <div class="status-box">
+                    <span>Status: <strong id="status-text">Aguardando...</strong></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
